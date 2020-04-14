@@ -1,0 +1,53 @@
+@import "variables";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: $primaryColor;
+  color: $textPrimary;
+}
+
+a {
+  text-decoration: none;
+  color: $textPrimary;
+}
+
+#welcome {
+  .container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & > div {
+      h1 {
+        font-size: 55px;
+        text-transform: capitalize;
+        color: $textSecondary;
+
+        q {
+          text-transform: uppercase;
+        }
+      }
+
+      .links {
+        display: flex;
+        justify-content: center;
+
+        a {
+          margin: 0 10px;
+          color: lighten($textSecondary, 5%);
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
